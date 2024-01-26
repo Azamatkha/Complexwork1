@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Source Sans Pro");
+@import url("https://fonts.googleapis.com/css2?family=Road Rage");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Oswald");
+
+@media(max-width:768px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* Menu Bar */
+    .menu{
+        font-family: 'Source Sans Pro';
+        background-color: #285048;
+        color: #ffffff;
+        height: 80px; 
+    }
+    
+    .menu__name{
+        font-size: 20px;
+        font-weight:600;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .menu__item{
+        font-size: 14px;
+        padding: 14px;
+        height: auto;
+        position: relative;
+        display: none;
+    }
+    
+    .menu__link{
+        text-decoration: none;
+    }
+    
+    .menu__link::before {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 5%;
+        display: block;
+        width: 90%;
+        height: 2px;
+    }
+
+    .menu__link:hover::before{
+        background-color: white;
+    }
+    .menu__link:hover{
+        font-weight: 700;
+    }
+
+    /* Primary Article */
+
+    .header__article {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-repeat: no-repeat;
+        height: 720px;
+    }
+
+    .image{
+        background: linear-gradient(0deg, rgba(41, 43, 42, 0.52) 0%, rgba(41, 43, 42, 0.52) 100%), url('../images/backimage2.png'), lightgray 50% / cover no-repeat;
+    }
+
+    .logo{
+        margin-top: 82px;
+        width: 216px;
+    }
+
+    .header__article__name{
+        font-family: 'Road Rage';
+        font-size: 75px;
+        text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.44);
+        line-height: 76px; /* 75% */
+        font-weight: normal;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .header__article__text{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.70);
+        font-family: "Source Sans Pro";
+        font-size: 24px;
+        padding-left: 70px;
+        padding-right: 70px;
+        line-height: 32px; /* 133.333% */
+    }
+    
+    /* Main Article */
+    .main__article{
+        background-color: #ffffff;
+        font-family: "Oswald";
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .main__article__name{
+        font-family: "Staatliches";
+        font-size: 48px;
+        text-align: center;
+        color: #285048;
+        line-height: 55px; /* 91.667% */
+        padding-top: 102px;
+        padding-bottom: 78px;
+    }
+    
+    .main__article__name2{
+        font-family: "Poppins";
+        text-align: center;
+        font-size: 24px;
+        color: #40403F;
+        line-height: 32px; /* 91.667% */
+        padding-bottom: 50px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    
+    .main__article__text{
+        text-align: center;
+        font-family: "Source Sans Pro";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+    
+    .main__article__text p{
+        text-align: left;
+        width: 400px;
+        font-size: 16px;
+        padding-bottom: 24px;
+        line-height: 22px; /* 137.5% */
+
+    }
+
+    .main__article__footer{
+        color: #000000;
+    }
+    
+    /* Side Bar */
+    aside{
+        display: flex;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%,
+            rgba(0, 0, 0, 0.30) 100%),
+            url("../images/bottom.png"),
+             lightgray 50% / cover no-repeat;
+        color: #ffffff;
+        text-align: center;
+        height: 636px;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+    }
+    
+    .sidebar__heading{
+        font-family: "Staatliches";
+        font-size: 42px;
+        padding-bottom: 75px;
+    }
+    
+    .sidebar__comment{
+        font-family: "Source Sans Pro";
+        font-size: 24px;
+        text-align: center;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-bottom: 54px;
+    }
+    
+    .btn {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        display: flex;
+        background-color: #ffffff;
+        height: 122px;
+        width: 122px;
+        border-radius: 50%;
+        font-size: 3rem;
+        color: #285048;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+    }
+    
+    footer{
+        background-color: #285048;
+        color: #ffffff;
+        font-family: "Source Sans Pro";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 292px;
+    }
+    
+    footer address{
+        font-style: normal;
+        text-align: center;
+        flex-direction: row;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: #ffffff;
+        padding: 19px;
+    }
+    footer figure{
+        order: -1;
+        padding: 29px;
+    }
+
+    .logo2{
+        width: 150px;
+        height: 100px;
+    }
+
+    .logo__caption{
+        text-align: center;
+    }
+    
+    .copyright{
+        padding-bottom: 37px;
+        padding-top: 19px;
+    }
+}
